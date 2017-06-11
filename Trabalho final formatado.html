@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+   <head>
+      <title>Bootstrap Example</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>	
+   </head>
+   <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+         <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+            </button>
+            <a class="navbar-brand" href="#">Corridoni</a>
+         </div>
+         <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+               <li class="active"><a href="#home">Sobre</a></li>
+            </ul>
+         </div>
+      </div>
+   </nav>
+   <body>
+      <div style="background-color:darkslategrey">
+         <div class="container">
+            <div class="jumbotron" style="background-color:royalblue">
+               <h1>Corridoni</h1>
+               <p>Licenciamentos</p>
+            </div>
+            <div rows>
+               <div class="col-md-4">
+                  <h2>Licenc. de Textos</h2>
+                  <img src="livro-aberto.jpg" class="img-square" alt="Cinque Terre" width="304" height="236"> 
+               </div>
+               <div class="col-md-4">
+                  <h2>Iconografia</h2>
+                  <img src="iconografia.jpg" class="img-square" alt="Cinque Terre" width="304" height="236"> 
+               </div>
+               <div class="col-md-4">
+                  <h2>ilustração</h2>
+                  <img src="ilustracao1.jpg" class="img-square" alt="Cinque Terre" width="304" height="236"> 
+               </div>
+            </div>
+            <ul class="nav nav-tabs nav-justified">
+               <li class="active"><a data-toggle="tab" href="#home">Sobre</a></li>
+               <li><a data-toggle="tab" href="#menu1">Iconografia</a></li>
+               <li><a data-toggle="tab" href="#menu2">Ilustrações</a></li>
+               <li><a data-toggle="tab" href="#menu3">Textos</a></li>
+            </ul>
+            <div class="tab-content">
+               <div id="home" class="tab-pane fade in active">
+                  <h3>Sobre</h3>
+                  <p>Micro empresa especializada em serviços editoriais fundada em dezembro de 2012.</p>
+               </div>
+               <div id="menu1" class="tab-pane fade">
+                  <h3>Iconografia</h3>
+                  <p>Licenciamento de imagens, cartoons, tirinhas e infográficos para livros didáticos e apostilas</p>
+               </div>
+               <div id="menu2" class="tab-pane fade">
+                  <h3>Ilustrações</h3>
+                  <p>Licenciamentos e fluxo de pedidos encomendas e avaliações de ilustrações para livros didáticos, técnicos e apostilas.</p>
+                  <div rows>
+                     <div class="col-md-6">
+                        <blockquote>
+                           <p> "20 anos de experiência." </p>
+                           <footer>Saraiva Educação - São Paulo</footer>
+                        </blockquote>
+                     </div>
+                     <div class="col-md-6">
+                     </div>
+                     <blockquote>
+                        <p> "Profissional freelancer com experiência em programas governamentais"</p>
+                        <footer>
+                           Editora FTD- São Paulo
+                           <a href="#"><span class="label label-default">novo</span></a>
+                        </footer>
+                     </blockquote>
+                  </div>
+               </div>
+               <div id="menu3" class="tab-pane fade">
+                  <h3>Textos</h3>
+                  <p>Licenciamento de textos de terceiros e poemas, contato com os principais autores e agências literárias do Brasil.</p>
+               </div>
+            </div>
+            <h3>Contato</h3>
+            <div class="panel-group">
+            </div>
+            <div class="panel panel-default">
+               <div class="panel-heading">
+                  <h4 class="panel-title">
+                     <a class="navbar-brand" href="#">Voltar</a>
+                  </h4>
+               </div>
+               <div class="container">
+                  <h2>Contato</h2>
+                  <form role="form" class="form-horizontal">
+                     <div class="form-group">
+                        <label for="email" class="control-label col-sm-2">Email:</label>
+                        <div class="col-sm-8">
+                           <input type="email" class="form-control" id="email" placeholder="entre com o email"/>
+                        </div>
+                     </div>
+                     <div class="form-group">
+                        <label for="pwd" class="control-label col-sm-2">Senha:</label>
+                        <div class="col-sm-8">
+                           <input type="password" class="form-control" id="pwd" placeholder="entre com a senha"/>
+                        </div>
+                     </div>
+                     <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                           <div class="checkbox">
+                              <label><input type="checkbox"> Permanecer logado?</label>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                           <button type="submit" class="btn btn-default">Enviar</button>
+                        </div>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+         <div class="container">
+            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Saiba Mais </button>
+            <div id="myModal" class="modal fade" role="dialog">
+               <div class="modal-dialog">
+                  <div class="modal-content">
+                     <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Sobre o site:</h4>
+                     </div>
+                     <div class="modal-body">
+                        <p>Site criado e desenvolvido por Ricardo Corridoni, sob orientação do Prof. Fábio de Toleto Pereira.</p>
+                     </div>
+                     <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>
